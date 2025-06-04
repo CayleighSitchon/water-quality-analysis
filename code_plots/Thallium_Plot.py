@@ -52,8 +52,9 @@ element_avg = element_avg[element_avg['Element Label'].isin(top_elements)]
 heatmap_data = element_avg.pivot(index='Element Label', columns='Location', values='Concentration')
 
 # Plot heatmap
+#learn how to create a dropdown menu to select the month and plot of the data for that month.
 plt.figure(figsize=(12, 8))
-sns.heatmap(heatmap_data, cmap="viridis", annot=True, fmt=".3f")
+sns.heatmap(heatmap_data, cmap="viridis", annot=True, fmt=".3f") # will help visualize data in 2D
 plt.title('Average Concentration of Top Elements by Location', fontsize=14, fontweight='bold')
 plt.ylabel('Element')
 plt.xlabel('Location')
@@ -65,7 +66,7 @@ plt.figure(figsize=(14, 6))
 sns.boxplot(data=all_data[all_data['Element Label'].isin(top_elements)],
             x='Element Label', y='Concentration')
 plt.yscale('log')  # Use log scale if ranges vary a lot
-plt.title('Distribution of Element Concentrations')
+plt.title('Variation in Element Concentrations Across All Locations and Months (Top 10 Elements)')
 plt.xlabel('Element')
 plt.ylabel('Concentration (ppm)')
 plt.tight_layout()
