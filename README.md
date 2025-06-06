@@ -25,7 +25,7 @@ This was my first applied coding project, using pandas, Matplotlib, and Seaborn,
 - `data`: Cleaned dataset used for the analysis (included only if permitted)
 - `README.md`: This file
 
-## Summary to what I Learned
+## Summary to what I Learned so Far
 - How to clean and structure raw lab data for analysis
 - How to use Python libraries to visualize and interpret trends in environmental data
 - How to work independently on a technical project and clearly document the process
